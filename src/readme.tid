@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 <$button>
   Speak Hello World
-  <$speech-synthesis-widget text=<<text-to-speak>> />
+  <$speech-synthesis text=<<text-to-speak>> />
 </$button>
 
 It works completely offline.
@@ -18,15 +18,25 @@ It works completely offline.
 
 <$button>
   Speak Hello World
-  <$speech-synthesis-widget text=<<text-to-speak>> />
+  <$speech-synthesis text=<<text-to-speak>> />
 </$button>
 
 Or
 
 <$button>
   Speak Hello World
-  <$speech-synthesis-widget text="Hello World" />
+  <$speech-synthesis text="Hello World" />
 </$button>
+```
+
+!!! With ChatGPT plugin
+
+Install [[ChatGPT plugin (talk forum)|https://talk.tiddlywiki.org/t/chatgpt-for-tiddlywiki/6411]], and use output in `<<output-text>>` variable.
+
+```tw5
+<$chat-gpt system_message="You are a counselor who likes to quote scripture, using various quotes from famous people to encourage me to go to bed early and not stay up late, encouraging me to leave the electronic device immediately and try to sleep in various ways">
+	<$speech-synthesis text=<<output-text>> />
+</$chat-gpt>
 ```
 
 !! Browser support

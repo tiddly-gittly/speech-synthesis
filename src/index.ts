@@ -41,4 +41,4 @@ class SpeechSynthesisWidget extends Widget {
 }
 
 declare const exports: Record<string, typeof Widget>;
-exports['speech-synthesis-widget'] = SpeechSynthesisWidget;
+exports['speech-synthesis'] = SpeechSynthesisWidget;
