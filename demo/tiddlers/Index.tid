@@ -1,8 +1,20 @@
 title: Index
 type: text/vnd.tiddlywiki
 
+\define text-to-speak() Hello World
+
 {{$:/snippets/minilanguageswitcher}}
 
-Some readme here.
+<$button>
+  Speak Hello World
+  <$speech-synthesis-widget text=<<text-to-speak>> />
+</$button>
 
-<$example-widget />
+```tw5
+\define text-to-speak() Hello World
+
+<$button>
+  Speak Hello World
+  <$speech-synthesis-widget text=<<text-to-speak>> />
+</$button>
+```
