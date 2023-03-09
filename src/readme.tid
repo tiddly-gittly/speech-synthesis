@@ -1,3 +1,23 @@
-title: $:/plugins/linonetwo/tw-example-plugin/readme
+title: $:/plugins/linonetwo/speech-synthesis/readme
 creator: LinOnetwo
 type: text/vnd.tiddlywiki
+
+\define text-to-speak() Hello World
+
+<$button>
+  Speak Hello World
+  <$speech-synthesis-widget text=<<text-to-speak>> />
+</$button>
+
+It works completely offline.
+
+!! Usage
+
+```tw5
+\define text-to-speak() Hello World
+
+<$button>
+  Speak Hello World
+  <$speech-synthesis-widget text=<<text-to-speak>> />
+</$button>
+```
