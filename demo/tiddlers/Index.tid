@@ -2,3 +2,9 @@ title: Index
 type: text/vnd.tiddlywiki
 
 {{$:/plugins/linonetwo/speech-synthesis/readme}}
+
+!! Other examples
+
+Also try [[CreateTiddlerAndSpeak]] for fun:
+
+{{CreateTiddlerAndSpeak}}

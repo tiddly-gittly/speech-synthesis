@@ -1,0 +1,10 @@
+title: CreateTiddlerAndSpeak
+type: text/vnd.tiddlywiki
+
+<$button>
+  <$action-createtiddler $basetitle="Homemade Button" tags="$:/tags/PageControls" text={{$:/state/new-button-caption}}>
+    <$speech-synthesis-widget text=<<createTiddler-title>> />
+    <$action-navigate $to=<<createTiddler-title>>/>
+  </$action-createtiddler>
+  Create a new tiddler and open the tiddler and speak its title
+</$button>

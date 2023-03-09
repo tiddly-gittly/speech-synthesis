@@ -20,6 +20,13 @@ It works completely offline.
   Speak Hello World
   <$speech-synthesis-widget text=<<text-to-speak>> />
 </$button>
+
+Or
+
+<$button>
+  Speak Hello World
+  <$speech-synthesis-widget text="Hello World" />
+</$button>
 ```
 
 !! Browser support
