@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "node_modules/tw5-typed/**/*.ts",
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.tsx",
+    "demo/**/*.ts",
+    "demo/**/*.tsx",
+    "demo/**/*.js",
+    "features/**/*.ts",
+    "scripts/**/*.mjs",
+    "src/**/*.d.ts",
+    "demo/**/*.d.ts",
+    "test/**/*.mjs",
+    "./*.json",
+    "./*.js",
+    ".eslintrc.js"
+  ],
+  "exclude": ["demo/**/*.js"]
+}
